@@ -165,6 +165,80 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
   footer{border-top:1px solid #999}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.subt{font-family:var(--serif);font-size:17px;color:var(--ink-2);margin-top:4px;
+  line-height:1.45}
+.dt{color:var(--ink-3);font-size:11px;letter-spacing:.04em}
+.caln{font-size:12.5px;color:var(--brass);background:var(--brass-lt);
+  border-radius:var(--r);padding:7px 12px;display:inline-block}
+.thesis{font-family:var(--serif);font-size:16px;line-height:1.7;color:var(--ink);
+  padding-right:14px;border-right:2px solid var(--brass)}
+.chron{list-style:none;position:relative;padding-right:18px}
+.chron::before{content:"";position:absolute;right:4px;top:8px;bottom:8px;
+  width:1px;background:var(--line)}
+.chron li{position:relative;padding:5px 0}
+.chron li::before{content:"";position:absolute;right:-18px;top:12px;width:9px;height:9px;
+  border-radius:50%;background:var(--panel);border:1.5px solid var(--day)}
+.chron .p{font-size:14px;color:var(--ink)}
+.chron .cn{font-size:13px;color:var(--ink-2);margin-top:4px}
+.case{background:var(--panel);border:1px solid var(--line);border-right:3px solid var(--brass);
+  border-radius:var(--r);padding:14px 18px}
+.case h4{font-family:var(--serif);font-size:16px;font-weight:700;margin-bottom:5px}
+.case p{font-size:13.5px;color:var(--ink-2)}
+.xr{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
+.inote{display:block;font-size:12px;color:var(--rust);background:var(--rust-lt);
+  border-radius:4px;padding:3px 8px;margin-top:4px}
+@media print{.case,.caln{background:#fff;border:1px solid #ccc}}
+
+.dax{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}
+.dax span{font-size:12.5px;color:var(--ink-2);background:var(--line-2);
+  padding:3px 10px;border-radius:4px}
+.dax i{font-style:normal;color:var(--ink-3);font-size:12px}
+.focus{border-right:2px solid var(--day);padding:2px 16px;margin-bottom:30px}
+.focus:last-child{margin-bottom:0}
+.focus h3{font-family:var(--serif);font-size:17.5px;font-weight:700;line-height:1.45}
+.focus .pr{font-size:14px;color:var(--ink-2);margin-top:10px}
+.fq{margin-top:12px;padding:10px 14px;background:var(--day-lt);border-radius:var(--r)}
+.fq q{font-family:var(--serif);font-size:15px;line-height:1.7;color:var(--ink);quotes:none}
+.fq cite{display:block;font-style:normal;font-size:12px;color:var(--ink-3);margin-top:4px}
+.ftw{overflow-x:auto;margin-top:14px}
+.ft{border-collapse:collapse;width:100%;font-size:13.5px;min-width:480px}
+.ft caption{text-align:right;font-size:12px;color:var(--ink-3);padding-bottom:6px}
+.ft th{text-align:right;font-size:11px;letter-spacing:.06em;color:var(--ink-3);
+  font-weight:600;border-bottom:1px solid var(--line);padding:6px 8px}
+.ft td{border-bottom:1px solid var(--line-2);padding:7px 8px;color:var(--ink-2);
+  vertical-align:top}
+.ft td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+.fp{list-style:none;margin-top:12px}
+.fp li{font-size:14px;color:var(--ink-2);padding:5px 15px 5px 0;position:relative}
+.fp li::before{content:"";position:absolute;right:2px;top:14px;width:5px;height:5px;
+  border-radius:50%;background:var(--ink-3)}
+.fl{list-style:none;margin-top:12px}
+.fl li{padding:6px 0;font-size:14px;color:var(--ink-2)}
+.fl b{display:block;font-size:12.5px;color:var(--ink);margin-bottom:2px}
+.tens{margin-top:14px;background:var(--brass-lt);border-radius:var(--r);padding:10px 14px;
+  font-size:14px;color:var(--ink-2)}
+.tens span{display:block;font-size:10.5px;letter-spacing:.09em;color:var(--brass);
+  margin-bottom:3px}
+.attr{margin-top:8px;font-size:12.5px;color:var(--ink-2)}
+.attr span{display:inline-block;font-size:10.5px;letter-spacing:.06em;color:var(--brass);
+  background:var(--brass-lt);border-radius:20px;padding:1px 8px;margin-left:7px}
+.branch{margin-top:18px;padding-top:14px;border-top:1px solid var(--line-2)}
+.branch h4{font-family:var(--serif);font-size:15px;font-weight:700}
+.theme{margin-bottom:24px}
+.theme:last-child{margin-bottom:0}
+.theme h4{font-family:var(--serif);font-size:15.5px;font-weight:700}
+.elbox{margin-top:34px;border:1px dashed var(--line);border-radius:var(--r);
+  padding:16px 18px;background:var(--panel)}
+.elbox h4{font-family:var(--serif);font-size:15px;font-weight:700;margin-bottom:6px}
+.elbox>p{font-size:13.5px;color:var(--ink-2)}
+.elbox .fq{background:var(--line-2)}
+.elbox .chron{margin-top:14px}
+.intl{font-size:12px;color:var(--ink-2);background:var(--rust-lt);border-radius:var(--r);
+  padding:10px 14px}
+.intl ul{list-style:none;padding-right:12px}
+.intl li{padding:2px 0}
+@media print{.elbox,.fq,.tens,.intl{background:#fff;border:1px solid #ccc}}
 </style>
 </head>
 <body>
@@ -322,7 +396,7 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <p class="lyh">כיצד הגיעה השאלה לכאן</p>
 <ol class="layers"><li>הברייתא (פסחים נ ע&quot;ב) מדברת על ערבי שבתות וערבי ימים טובים יחד, ובערב פסח יש דין חמור יותר — ומכאן הקושי.</li><li>הגמרא מיישבת בשני אופנים, והם שני צירים שונים לגמרי.</li></ol>
 <p class="lyh">הצדדים</p>
-<ul class="sides"><li>&quot;התם מן המנחה ולמעלה, הכא מחצות&quot; — ההבדל בזמן: בערב שבת מן המנחה, בערב פסח מחצות</li><li>&quot;התם סימן ברכה לא חזי; הכא משמתינן ליה&quot; — ההבדל בסנקציה: בערב שבת הפסד ברכה בלבד, בערב פסח מנדין</li></ul>
+<ul class="sides"><li>&quot;התם, מן המנחה ולמעלה הוא דאסור, סמוך למנחה — לא. הכא — מחצות&quot; — ההבדל בזמן: בערב שבת מן המנחה ולמעלה, ולא סמוך לה; בערב פסח מחצות</li><li>&quot;התם, סימן ברכה הוא דלא חזי, אבל שמותי לא משמתינן ליה. הכא — שמותי נמי משמתינן ליה&quot; — ההבדל בסנקציה: בערב שבת הפסד ברכה בלבד, בערב פסח מנדין</li></ul>
 <div class="nafka"><span>נפקא מינה</span><p>הרמב&quot;ם (הל&#x27; יו&quot;ט פ&quot;ח הי&quot;ז) פסק לפי התירוץ השני ובנה מדרג: הפסד סימן ברכה → גוערין בו ומבטלין אותו בעל כרחו → מכת מרדות (אין) → נידוי (בערב פסח בלבד). זו התשובה לשאלה מה תוקפו של רנ&quot;א.</p></div>
 </div>
 <div class="mach">
@@ -331,8 +405,8 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <ol class="layers"><li>בני ביישן נהגו שלא לילך מצור לצידון בערב שבת. בניהם ביקשו מר&#x27; יוחנן להתירם: &quot;אבהתין הוה אפשר להו, אנן לא אפשר לן&quot; — הטענה כלכלית, ורש&quot;י מפרש שהנסיעה הייתה ליום השוק בצידון והאבות היו עשירים ויכלו לוותר. והשיב: &quot;כבר קיבלו אבותיכם עליהם, שנאמר שמע בני מוסר אביך&quot;.</li><li>והנקודה המכריעה: צור–צידון הוא מקרה מותר במפורש (תוספתא שבת יג, יג). כלומר זו דוגמה טהורה ל&quot;דברים המותרין ואחרים נהגו בהן איסור&quot; — חומרה יתרה, ולא נורמה.</li></ol>
 <p class="lyh">הצדדים</p>
 <ul class="sides"><li>רב חסדא (בבלי): הברייתא בכותאי, ומי שמבין בהלכה — אפשר להתיר לו. כלומר ידיעה מקילה; המנהג הוא הרגל</li><li>ר&#x27; אבין (ירושלמי פסחים ד, א): הפוך — היודע שהוא מותר ונוהג בו איסור, אין מתירין לו. ידיעה מחמירה; המנהג הוא נדר</li></ul>
-<div class="nafka"><span>נפקא מינה</span><p>שתי תפיסות של מנהג — כנדר מול כהרגל — ומהן נגזר מי יכול להישאל עליו. ובצדן העיקרון: אין אדם נשאל על נדר אביו. הירושלמי שואל במפורש &quot;ואין אדם נשאל על נדרו?&quot; ומשיב: &quot;תמן משנדר נשאל, ברם הכא נדרו אבותיכם&quot;.</p></div>
-<p class="mnote">הכלל של הר&quot;ן (פסחים נ ע&quot;ב) הוא הניסוח המחייב: &quot;מנהגא דאיסורא לא אסר מידי אלא במקום שיש בו עיקר איסור... ומשום דבערבי פסחים מחצות ולמעלה איכא איסורא, מהני מנהגא למיסר טפי&quot;. כלומר מנהג מחייב חל היכן שיש עיקר איסור שהמנהג מרחיב — וזה עומד תחת כל מנהגי הגוש. תורת המנהג נפתחת כאן ואינה מפותחת כאן. הפיתוח שייך לרמ&quot;א ולסימנים המאוחרים.</p>
+<div class="nafka"><span>נפקא מינה</span><p>שתי תפיסות של מנהג — כנדר מול כהרגל — ומהן נגזר מי יכול להישאל עליו. ובצדן העיקרון: אין אדם נשאל על נדר אביו. הירושלמי שואל במפורש &quot;ואין אדם נשאל על נדרו?&quot; ומשיב: &quot;תמן משנדר נשאל. ברם הכא אבותיכם נדרו&quot;.</p></div>
+<p class="mnote">הכלל של הר&quot;ן (פסחים נ ע&quot;ב) הוא הניסוח המחייב: &quot;מנהגא דאיסורא לא אסר מידי אלא במקום שיש עיקר איסור... ומשום דערבי פסחים מחצות ולמעלה איכא איסורא, מהני מנהגא למיסר טפי&quot;. כלומר מנהג מחייב חל היכן שיש עיקר איסור שהמנהג מרחיב — וזה עומד תחת כל מנהגי הגוש. תורת המנהג נפתחת כאן ואינה מפותחת כאן. הפיתוח שייך לרמ&quot;א ולסימנים המאוחרים.</p>
 </div>
 <div class="mach">
 <p class="mq">שיעור ההכנה בגופו לכבוד שבת (שבת קיג ע&quot;א)</p>
@@ -348,7 +422,7 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <div class="srcs three">
 <div>
 <p class="srch">יסוד — תנאים ואמוראים</p>
-<ul><li>פסחים נ ע&quot;ב — המקור היחיד לרנ&quot;א. &quot;העושה מלאכה בערבי שבתות ובערבי ימים טובים מן המנחה ולמעלה, אינו רואה סימן ברכה לעולם&quot;</li><li>פסחים נ ע&quot;ב — סוגיית בני ביישן; &quot;שמע בני מוסר אביך ואל תטוש תורת אמך&quot;</li><li>ירושלמי פסחים ד, א — הצד ההפוך; &quot;ואין אדם נשאל על נדרו?&quot;</li><li>תוספתא שבת יג, יג — מצור לצידן מותר</li><li>שבת קיט ע&quot;א; שבת קיג ע&quot;א — ההכנה בגופו</li><li>שבת כה ע&quot;ב — רבי יהודה בר אלעאי בערב שבת</li></ul>
+<ul><li>פסחים נ ע&quot;ב — המקור היחיד לרנ&quot;א. &quot;העושה מלאכה בערבי שבתות וימים טובים מן המנחה ולמעלה, אינו רואה סימן ברכה לעולם&quot;</li><li>פסחים נ ע&quot;ב — סוגיית בני ביישן; &quot;שמע בני מוסר אביך ואל תטוש תורת אמך&quot;</li><li>ירושלמי פסחים ד, א — הצד ההפוך; &quot;ואין אדם נשאל על נדרו?&quot;</li><li>תוספתא שבת יג, יג — מצור לצידן מותר</li><li>שבת קיט ע&quot;א; שבת קיג ע&quot;א — ההכנה בגופו</li><li>שבת כה ע&quot;ב — רבי יהודה בר אלעאי בערב שבת</li></ul>
 </div>
 <div>
 <p class="srch">ראשונים</p>
@@ -422,7 +496,7 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <p class="lyh">הצדדים</p>
 <ul class="sides"><li>גאונים והרמב&quot;ם (וסיעת ראשוני ספרד — הרי&quot;ף, ר&quot;י מיגש): מכריעים כסוגיית שבת ודוחים את פסחים לגמרי. &quot;משתשקע החמה עד שיראו שלשה כוכבים בינוניים&quot; (רמב&quot;ם שבת ה,ד). זו השיטה שלפיה מחושבים לוחות הזמנים היום.</li><li>רבנו תם (ספר הישר סי&#x27; רכא; תוס&#x27; פסחים צד ע&quot;א): מיישב ואינו מכריע — שתי שקיעות. פסחים בתחילת השקיעה, שבת בסופה. הלילה ד&#x27; מילין אחרי השקיעה הנראית. נפסק בשולחן ערוך רס&quot;א ס&quot;ב.</li><li>ספר היראים (סי&#x27; רעד): אף הוא מיישב בשתי שקיעות — אך בכיוון ההפוך. בין השמשות מתחיל כג&#x27; רבעי מיל לפני השקיעה הנראית, והלילה מתחיל בשקיעה הנראית עצמה. &quot;צאת הכוכבים&quot; הוא תחילת כניסתם בעובי הרקיע ולא הראותם לעין.</li><li>הגר&quot;א (ביאורו רס&quot;א ס&quot;ב): דוחה את ר&quot;ת מכוח המציאות ומכריע כגאונים — ומכאן המנהג בארץ ישראל.</li></ul>
 <div class="nafka"><span>נפקא מינה</span><p>הפער אינו יוצר חיוב אלא ספק דאורייתא: פרק זמן שלשיטה אחת הוא שבת גמורה מן התורה ולאחרת חול גמור — ובו תלויים איסורים שזדונם כרת. לגאונים ולרמב&quot;ם ערב שבת כבר שבת ומוצאי שבת כבר חול; לרבנו תם להפך. נוגע גם לתענית יום הכיפורים ולחמץ בפסח. ולמעשה נוהגים בו לחומרה משני הצדדים: מהיראים — המ&quot;ב כותב שראוי לחשוש לשיטתו בכניסת שבת, כלומר להקדים; ומרבנו תם — החת&quot;ס בשם ההפלאה והגר&quot;נ אדלר פסקו כמותו אף לקולא, ויש הנוהגים כן.</p></div>
-<p class="mnote">שורש המחלוקת נדון בשני מישורים. (א) מדוע החזיק ר&quot;ת בשיטתו — הרב שלום משאש תלה זאת בגאוגרפיה (צפון צרפת, שבה הנשף ארוך), והגר&quot;ע יוסף דחה: &quot;רבנו תם לא הסתכל לשמים אלא בגמרא&quot;, ומרן שישב בארץ ישראל פסק כמותו. (ב) ובשורש השורש — הרי&quot;ד סולובייצ&#x27;יק: התורה מגדירה יום ולילה בשני אופנים, ביום הראשון לפי אור וחושך וביום הרביעי לפי המאורות. שתי המערכות אינן חופפות, והפער ביניהן הוא בין השמשות.</p>
+<p class="mnote">שורש המחלוקת נדון בשני מישורים. (א) מדוע החזיק ר&quot;ת בשיטתו — הרב שלום משאש תלה זאת בגאוגרפיה (צפון צרפת, שבה הנשף ארוך), והגר&quot;ע יוסף דחה זאת, ומרן שישב בארץ ישראל פסק כמותו. (ב) ובשורש השורש — הרי&quot;ד סולובייצ&#x27;יק: התורה מגדירה יום ולילה בשני אופנים, ביום הראשון לפי אור וחושך וביום הרביעי לפי המאורות. שתי המערכות אינן חופפות, והפער ביניהן הוא בין השמשות.</p>
 </div>
 <div class="mach">
 <p class="mq">מעמד תוספת שבת — דאורייתא או לא?</p>
@@ -517,9 +591,9 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <p class="sech">המחלוקות</p>
 <div class="mach">
 <p class="mq">טעם חיוב הדלקת הנר — ומה נגזר מכל טעם</p>
-<ul class="sides"><li>נר למאור (תנאים, ואמוראים עד הדור השלישי): מכשיר מעונג שבת ככל ההכנות, ואינו חיוב — נזכר במכילתא בצד הטמנת חמין, ובמשנה בצד עירוב ומעשר</li><li>חובה (רבא, שבת כה ע&quot;ב): &quot;שאני אומר, הדלקת נר בשבת חובה&quot; — חיוב עצמי הדוחה מצוות אחרות. חידוש; אביי לא החזיק בו קודם ששמעו</li><li>ראש לכל עונג (המאירי, שבת כב ע&quot;ב): &quot;אין עונג בלא אורה&quot; — האור תנאי לקיומם של שאר העינוגים, ומכאן שהוא לבדו נעשה חיוב</li><li>שלום בית (רבא, שבת כג ע&quot;ב; ורש&quot;י ייחד לו ערך עצמאי): &quot;שבני ביתו מצטערין לישב בחושך... ובמקום שאין נר אין שלום, שהולך ונכשל והולך באפילה&quot;; והכלבו: &quot;ואז כועס על בני ביתו&quot;</li><li>כבוד שבת (רש&quot;י כה ע&quot;ב ד&quot;ה חובה: &quot;אין סעודה חשובה אלא במקום אור&quot;; ומחכמי אשכנז ואילך — &quot;נר של כבוד&quot; טקסי ולא שימושי, משום שימי הקיץ הצפוניים ייתרו את אורו)</li></ul>
+<ul class="sides"><li>נר למאור (תנאים, ואמוראים עד הדור השלישי): מכשיר מעונג שבת ככל ההכנות, ואינו חיוב — נזכר במכילתא בצד הטמנת חמין, ובמשנה בצד עירוב ומעשר</li><li>חובה (רבא, שבת כה ע&quot;ב): &quot;שאני אומר, הדלקת נר בשבת חובה&quot; — חיוב עצמי הדוחה מצוות אחרות. חידוש; אביי לא החזיק בו קודם ששמעו</li><li>ראש לכל עונג (המאירי, שבת כב ע&quot;ב): &quot;אין עונג בלא אורה&quot; — האור תנאי לקיומם של שאר העינוגים, ומכאן שהוא לבדו נעשה חיוב</li><li>שלום בית (רבא, שבת כג ע&quot;ב; ורש&quot;י ייחד לו ערך עצמאי): &quot;שבני ביתו מצטערין לישב בחושך... ובמקום שאין נר אין שלום, שהולך ונכשל והולך באפילה&quot;; והכלבו: &quot;ואז כועס על בני ביתו&quot;</li><li>כבוד שבת (רש&quot;י כה ע&quot;ב ד&quot;ה חובה: &quot;אין סעודה חשובה אלא במקום אור&quot;)</li></ul>
 <div class="nafka"><span>נפקא מינה</span><p>מקום ההדלקה — מקום סעודה בלבד (תוס&#x27; ורא&quot;ש) או כל חדרי הבית (רש&quot;י וכלבו); אכסנאי — פטור כשהמארחים הדליקו, או חייב בעצמו ובברכה (מהר&quot;ם); ברכה — אם ההדלקה מעשה מצוה או הכשר בלבד; נר דלוק ועומד — אם חייב לכבות ולהדליק (ר&quot;ת) או לא; מספר הנרות וסמליותם (זכור ושמור); שמן זית; ומאור החשמל.</p></div>
-<p class="mnote">אינם מחלוקת אלא רבדים היסטוריים שנשתלבו, וכל אחד גוזר הלכות אחרות: &quot;האחרונים לא נטו לחדד את המחלוקת בין הטעמים ושיטות הראשונים ולהכריע ביניהן, אלא לשלב את הטעמים יחד ולתת לכל אחד מהם ביטוי בהלכה&quot; — בית הלוי סי&#x27; יא, הרב עוזיאל, ודברי יציב.</p>
+<p class="mnote">אינם מחלוקת אלא רבדים היסטוריים שנשתלבו, וכל אחד גוזר הלכות אחרות.</p>
 </div>
 <div class="mach">
 <p class="mq">השורש המבני — המצווה היא מעשה ההדלקה או שיהיה נר דלוק בבית?</p>
@@ -538,18 +612,17 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <ul class="sides"><li>מרן: מברך ואחר כך מדליק</li><li>רמ&quot;א: מדליק ואחר כך מברך</li></ul>
 <div class="nafka"><span>נפקא מינה</span><p>נגזרת ישירה של השאלה אם ההדלקה היא קבלת שבת (קשר לשבוע 3), ושל החקירה מעשה מול קיום.</p></div>
 </div>
-<div class="mach">
-<p class="mq">פסול פתילות ושמנים</p>
-<ul class="sides"><li>רש&quot;י שבת כא ע&quot;א: &quot;אין האור נמשך אחריהן&quot; — והחשש שמא יטה</li><li>ריב&quot;ן: שמא יכבה וליכא שלום בית</li><li>תוס&#x27; שם: &quot;מסכסכת&quot;</li></ul>
-<div class="nafka"><span>נפקא מינה</span><p>היקף הפסול, ודין דיעבד. ותוס&#x27; התקשו: מדוע רק בנר המצווה מקפידים בפתילות ושמנים ולא בכל נרות הבית — ותירצו בדוחק.</p></div>
 </div>
+<div class="sec">
+<p class="sech">סוגיות נוספות</p>
+<div class="theme"><h4>פתילות ושמנים שאין מדליקין בהם (רס&quot;ד)</h4><ul class="fp"><li>רבה, שבת כא ע&quot;א: &quot;פתילות שאמרו חכמים אין מדליקין בהן בשבת, מפני שהאור מסכסכת בהן. שמנים שאמרו חכמים אין מדליקין בהן, מפני שאין נמשכין אחר הפתילה&quot;</li><li>פתילות — רש&quot;י שם: &quot;מסכסכת — ... שאין אורו זקוף ונוח במקום אחד אלא נדעך וקופץ&quot;; &quot;לישנא אחרינא: מסכסכת בהן — אינה נכנסת תוך הפתילה אלא סביב מבחוץ&quot;</li><li>שמנים — רש&quot;י שם: &quot;שאין נמשכין — ואתי להטות&quot;</li><li>תוס&#x27; שם ד&quot;ה מפני שאין נמשכין, בשם מהר&quot;א: &quot;באם שיש רק נר א&#x27; כשר בבית, ע&quot;י זה יזכור ולא יטה שאר נרות שבחדר ושבמרתף&quot;</li></ul></div>
 </div>
 <div class="sec">
 <p class="sech">מקורות</p>
 <div class="srcs three">
 <div>
 <p class="srch">יסוד — תנאים ואמוראים</p>
-<ul><li>שבת כג ע&quot;ב — נר ביתו ונר חנוכה; &quot;משום שלום ביתו&quot;</li><li>שבת כה ע&quot;ב — &quot;שאני אומר, הדלקת נר בשבת חובה&quot;</li><li>שבת כא ע&quot;א – כא ע&quot;ב — פתילות ושמנים; &quot;אין האור נמשך&quot;</li><li>שבת כ ע&quot;ב; שבת כד ע&quot;ב</li><li>מכילתא דר&quot;י ויקהל, מס&#x27; דשבתא פרשה א — הנר בצד הטמנת חמין</li><li>משנה שבת ב, ו–ז</li></ul>
+<ul><li>שבת כג ע&quot;ב — נר ביתו ונר חנוכה; &quot;משום שלום ביתו&quot;</li><li>שבת כה ע&quot;ב — &quot;שאני אומר, הדלקת נר בשבת חובה&quot;</li><li>שבת כא ע&quot;א – כא ע&quot;ב — פתילות ושמנים; רבה: פתילות &quot;מפני שהאור מסכסכת בהן&quot;, שמנים &quot;מפני שאין נמשכין אחר הפתילה&quot;</li><li>שבת כ ע&quot;ב; שבת כד ע&quot;ב</li><li>מכילתא דר&quot;י ויקהל, מס&#x27; דשבתא פרשה א — הנר בצד הטמנת חמין</li><li>משנה שבת ב, ו–ז</li></ul>
 </div>
 <div>
 <p class="srch">ראשונים</p>
@@ -613,7 +686,6 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <li><div class="k">השורש המבני — המצווה היא מעשה ההדלקה או שיהיה נר דלוק בבית?</div><div class="v">שבוע 4 · רס&quot;ג · רס&quot;ד</div></li>
 <li><div class="k">האם יוצאים ידי חובת הדלקת נר שבת בנורה חשמלית?</div><div class="v">שבוע 4 · רס&quot;ג · רס&quot;ד</div></li>
 <li><div class="k">סדר הברכה וההדלקה</div><div class="v">שבוע 4 · רס&quot;ג · רס&quot;ד</div></li>
-<li><div class="k">פסול פתילות ושמנים</div><div class="v">שבוע 4 · רס&quot;ג · רס&quot;ד</div></li>
 </ul></div>
 </div>
 <div class="sec">
@@ -627,9 +699,9 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
 <li><div class="k">ר&quot;ס</div><div class="v">מלאכה בערב שבת מן המנחה ולמעלה — מה תוקפה של האזהרה? · מנהג איסור בדבר המותר — מה מחייב בו, ומתי? · שיעור ההכנה בגופו לכבוד שבת (שבת קיג ע&quot;א) · יציאה בשיירה — יחסה להפלגה</div></li>
 <li><div class="k">רס&quot;ב</div><div class="v">מלאכה בערב שבת מן המנחה ולמעלה — מה תוקפה של האזהרה? · מנהג איסור בדבר המותר — מה מחייב בו, ומתי? · שיעור ההכנה בגופו לכבוד שבת (שבת קיג ע&quot;א) · יציאה בשיירה — יחסה להפלגה</div></li>
 <li><div class="k">רס&quot;א</div><div class="v">שיעור בין השמשות — ומה בכלל נמדד · מעמד תוספת שבת — דאורייתא או לא?</div></li>
-<li><div class="k">רס&quot;ג</div><div class="v">שיעור בין השמשות — ומה בכלל נמדד · מעמד תוספת שבת — דאורייתא או לא? · טעם חיוב הדלקת הנר — ומה נגזר מכל טעם · השורש המבני — המצווה היא מעשה ההדלקה או שיהיה נר דלוק בבית? · האם יוצאים ידי חובת הדלקת נר שבת בנורה חשמלית? · סדר הברכה וההדלקה · פסול פתילות ושמנים</div></li>
+<li><div class="k">רס&quot;ג</div><div class="v">שיעור בין השמשות — ומה בכלל נמדד · מעמד תוספת שבת — דאורייתא או לא? · טעם חיוב הדלקת הנר — ומה נגזר מכל טעם · השורש המבני — המצווה היא מעשה ההדלקה או שיהיה נר דלוק בבית? · האם יוצאים ידי חובת הדלקת נר שבת בנורה חשמלית? · סדר הברכה וההדלקה</div></li>
 <li><div class="k">רצ&quot;ג</div><div class="v">שיעור בין השמשות — ומה בכלל נמדד · מעמד תוספת שבת — דאורייתא או לא?</div></li>
-<li><div class="k">רס&quot;ד</div><div class="v">טעם חיוב הדלקת הנר — ומה נגזר מכל טעם · השורש המבני — המצווה היא מעשה ההדלקה או שיהיה נר דלוק בבית? · האם יוצאים ידי חובת הדלקת נר שבת בנורה חשמלית? · סדר הברכה וההדלקה · פסול פתילות ושמנים</div></li>
+<li><div class="k">רס&quot;ד</div><div class="v">טעם חיוב הדלקת הנר — ומה נגזר מכל טעם · השורש המבני — המצווה היא מעשה ההדלקה או שיהיה נר דלוק בבית? · האם יוצאים ידי חובת הדלקת נר שבת בנורה חשמלית? · סדר הברכה וההדלקה</div></li>
 </ul></div>
 </div>
 <div class="sec">
